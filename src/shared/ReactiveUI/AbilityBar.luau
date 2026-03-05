@@ -4,12 +4,12 @@ local TweenService = game:GetService("TweenService")
 local AbilityBar = {}
 
 local ABILITY_DATA = {
-	{name = "Flame Strike", icon = "🔥", key = "Q", cooldown = 8, color = Color3.fromRGB(255, 80, 40)},
-	{name = "Ice Shard", icon = "❄", key = "W", cooldown = 5, color = Color3.fromRGB(80, 180, 255)},
-	{name = "Thunder", icon = "⚡", key = "E", cooldown = 12, color = Color3.fromRGB(255, 220, 60)},
-	{name = "Shadow Step", icon = "🌑", key = "R", cooldown = 15, color = Color3.fromRGB(160, 60, 255)},
-	{name = "Heal", icon = "✦", key = "F", cooldown = 20, color = Color3.fromRGB(60, 220, 140)},
-	{name = "Ultimate", icon = "💠", key = "X", cooldown = 45, color = Color3.fromRGB(255, 80, 180)},
+	{name = "Flame Strike", icon = "F", key = "Q", cooldown = 8, color = Color3.fromRGB(255, 80, 40)},
+	{name = "Ice Shard", icon = "I", key = "W", cooldown = 5, color = Color3.fromRGB(80, 180, 255)},
+	{name = "Thunder", icon = "T", key = "E", cooldown = 12, color = Color3.fromRGB(255, 220, 60)},
+	{name = "Shadow Step", icon = "S", key = "R", cooldown = 15, color = Color3.fromRGB(160, 60, 255)},
+	{name = "Heal", icon = "+", key = "F", cooldown = 20, color = Color3.fromRGB(60, 220, 140)},
+	{name = "Ultimate", icon = "U", key = "X", cooldown = 45, color = Color3.fromRGB(255, 80, 180)},
 }
 
 function AbilityBar.create(screenGui: ScreenGui)

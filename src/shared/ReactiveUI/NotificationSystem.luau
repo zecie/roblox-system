@@ -3,13 +3,13 @@ local UIComponents = require(script.Parent.UIComponents)
 local NotificationSystem = {}
 
 local NOTIFICATION_TYPES = {
-	info = {icon = "ℹ", color = UIComponents.Colors.AccentSecondary},
-	success = {icon = "✓", color = UIComponents.Colors.AccentGreen},
-	warning = {icon = "⚠", color = UIComponents.Colors.AccentGold},
-	error = {icon = "✕", color = UIComponents.Colors.AccentRed},
-	loot = {icon = "✦", color = UIComponents.Colors.AccentTertiary},
-	achievement = {icon = "🏆", color = UIComponents.Colors.AccentGold},
-	levelup = {icon = "⬆", color = UIComponents.Colors.AccentPrimary},
+	info = {icon = "i", color = UIComponents.Colors.AccentSecondary},
+	success = {icon = "+", color = UIComponents.Colors.AccentGreen},
+	warning = {icon = "!", color = UIComponents.Colors.AccentGold},
+	error = {icon = "x", color = UIComponents.Colors.AccentRed},
+	loot = {icon = "*", color = UIComponents.Colors.AccentTertiary},
+	achievement = {icon = "#", color = UIComponents.Colors.AccentGold},
+	levelup = {icon = "^", color = UIComponents.Colors.AccentPrimary},
 }
 
 function NotificationSystem.create(screenGui: ScreenGui)

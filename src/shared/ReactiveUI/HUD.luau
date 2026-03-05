@@ -44,7 +44,7 @@ function HUD.create(screenGui: ScreenGui): {updateHealth: (number) -> (), update
 	UIComponents.tweenLoop(avatarGlow, 2, {BackgroundTransparency = 0.9})
 
 	local avatarIcon = UIComponents.createIcon({
-		text = "+",
+		text = "W",
 		size = UDim2.new(1, 0, 1, 0),
 		parent = avatarFrame,
 		color = UIComponents.Colors.AccentPrimary,
@@ -112,7 +112,7 @@ function HUD.create(screenGui: ScreenGui): {updateHealth: (number) -> (), update
 	})
 
 	UIComponents.createIcon({
-		text = "HP",
+		text = "+",
 		size = UDim2.new(0, 14, 0, 14),
 		position = UDim2.new(0, 4, 0.5, 0),
 		parent = healthBar.container,
@@ -148,7 +148,7 @@ function HUD.create(screenGui: ScreenGui): {updateHealth: (number) -> (), update
 	})
 
 	UIComponents.createIcon({
-		text = "◆",
+		text = "~",
 		size = UDim2.new(0, 12, 0, 12),
 		position = UDim2.new(0, 3, 0.5, 0),
 		parent = manaBar.container,
@@ -227,10 +227,10 @@ function HUD.create(screenGui: ScreenGui): {updateHealth: (number) -> (), update
 	})
 
 	local stats = {
-		{icon = "⚔", value = "2,450", label = "ATK"},
-		{icon = "🛡", value = "1,800", label = "DEF"},
-		{icon = "⚡", value = "340", label = "SPD"},
-		{icon = "✦", value = "99.2%", label = "CRIT"},
+		{icon = ">>", value = "2,450", label = "ATK"},
+		{icon = "[]", value = "1,800", label = "DEF"},
+		{icon = "~", value = "340", label = "SPD"},
+		{icon = "!!", value = "99.2%", label = "CRIT"},
 	}
 
 	for i, stat in stats do
@@ -282,9 +282,9 @@ function HUD.create(screenGui: ScreenGui): {updateHealth: (number) -> (), update
 	})
 
 	local currencyItems = {
-		{icon = "💎", value = "12,450", color = UIComponents.Colors.AccentSecondary, y = 10},
-		{icon = "🪙", value = "847,200", color = UIComponents.Colors.AccentGold, y = 35},
-		{icon = "⭐", value = "2,100", color = UIComponents.Colors.AccentTertiary, y = 55},
+		{icon = "<>", value = "12,450", color = UIComponents.Colors.AccentSecondary, y = 10},
+		{icon = "o", value = "847,200", color = UIComponents.Colors.AccentGold, y = 35},
+		{icon = "*", value = "2,100", color = UIComponents.Colors.AccentTertiary, y = 55},
 	}
 
 	for _, currency in currencyItems do

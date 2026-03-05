@@ -12,22 +12,22 @@ local RARITY_COLORS = {
 }
 
 local SAMPLE_ITEMS = {
-	{name = "Dragon Blade", icon = "⚔", rarity = "Legendary", stats = "+450 ATK"},
-	{name = "Shadow Cloak", icon = "🧥", rarity = "Epic", stats = "+280 DEF"},
-	{name = "Crystal Ring", icon = "💍", rarity = "Rare", stats = "+120 CRIT"},
-	{name = "Health Potion", icon = "🧪", rarity = "Common", stats = "+200 HP", count = 12},
-	{name = "Mana Elixir", icon = "🔮", rarity = "Uncommon", stats = "+150 MP", count = 8},
-	{name = "Phoenix Feather", icon = "🪶", rarity = "Mythic", stats = "Revive"},
-	{name = "Thunder Hammer", icon = "🔨", rarity = "Legendary", stats = "+380 ATK"},
-	{name = "Frost Shield", icon = "🛡", rarity = "Epic", stats = "+320 DEF"},
-	{name = "Emerald Amulet", icon = "📿", rarity = "Rare", stats = "+90 SPD"},
-	{name = "Steel Boots", icon = "👢", rarity = "Uncommon", stats = "+60 DEF"},
-	{name = "Fire Scroll", icon = "📜", rarity = "Rare", stats = "AoE DMG", count = 3},
-	{name = "Void Stone", icon = "🌑", rarity = "Mythic", stats = "+500 ATK"},
-	{name = "Healing Herb", icon = "🌿", rarity = "Common", stats = "+50 HP", count = 25},
-	{name = "Star Fragment", icon = "⭐", rarity = "Epic", stats = "+200 ALL"},
-	{name = "Ancient Tome", icon = "📖", rarity = "Legendary", stats = "+10% EXP"},
-	{name = "Iron Helm", icon = "⛑", rarity = "Common", stats = "+40 DEF"},
+	{name = "Dragon Blade", icon = "//>", rarity = "Legendary", stats = "+450 ATK"},
+	{name = "Shadow Cloak", icon = "{}", rarity = "Epic", stats = "+280 DEF"},
+	{name = "Crystal Ring", icon = "(o)", rarity = "Rare", stats = "+120 CRIT"},
+	{name = "Health Potion", icon = "[+]", rarity = "Common", stats = "+200 HP", count = 12},
+	{name = "Mana Elixir", icon = "[~]", rarity = "Uncommon", stats = "+150 MP", count = 8},
+	{name = "Phoenix Feather", icon = "^v^", rarity = "Mythic", stats = "Revive"},
+	{name = "Thunder Hammer", icon = "|T|", rarity = "Legendary", stats = "+380 ATK"},
+	{name = "Frost Shield", icon = "[=]", rarity = "Epic", stats = "+320 DEF"},
+	{name = "Emerald Amulet", icon = "<*>", rarity = "Rare", stats = "+90 SPD"},
+	{name = "Steel Boots", icon = "|_|", rarity = "Uncommon", stats = "+60 DEF"},
+	{name = "Fire Scroll", icon = "///", rarity = "Rare", stats = "AoE DMG", count = 3},
+	{name = "Void Stone", icon = "(x)", rarity = "Mythic", stats = "+500 ATK"},
+	{name = "Healing Herb", icon = "~Y~", rarity = "Common", stats = "+50 HP", count = 25},
+	{name = "Star Fragment", icon = "-*-", rarity = "Epic", stats = "+200 ALL"},
+	{name = "Ancient Tome", icon = "[#]", rarity = "Legendary", stats = "+10% EXP"},
+	{name = "Iron Helm", icon = "/^\\", rarity = "Common", stats = "+40 DEF"},
 }
 
 function Inventory.create(screenGui: ScreenGui): Frame
@@ -293,7 +293,7 @@ function Inventory.create(screenGui: ScreenGui): Frame
 		color = UIComponents.Colors.AccentGreen,
 		cornerRadius = 8,
 		zIndex = 12,
-		icon = "⚔",
+		icon = ">>",
 	})
 
 	UIComponents.createButton({
@@ -304,7 +304,7 @@ function Inventory.create(screenGui: ScreenGui): Frame
 		color = UIComponents.Colors.AccentGold,
 		cornerRadius = 8,
 		zIndex = 12,
-		icon = "🪙",
+		icon = "$",
 	})
 
 	UIComponents.createButton({
@@ -315,7 +315,7 @@ function Inventory.create(screenGui: ScreenGui): Frame
 		color = UIComponents.Colors.AccentRed,
 		cornerRadius = 8,
 		zIndex = 12,
-		icon = "🗑",
+		icon = "x",
 	})
 
 	UIComponents.animateIn(panel, "bottom", 0.3)

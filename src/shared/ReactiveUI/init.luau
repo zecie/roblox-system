@@ -39,9 +39,9 @@ local sidebar = UIComponents.createGlassPanel({
 })
 
 local sidebarButtons = {
-	{icon = "🎒", name = "Inventory", panel = Inventory},
-	{icon = "📊", name = "Stats", panel = StatsPanel},
-	{icon = "⚙", name = "Settings", panel = SettingsPanel},
+	{icon = "[ ]", name = "Inventory", panel = Inventory},
+	{icon = "|||", name = "Stats", panel = StatsPanel},
+	{icon = ":::", name = "Settings", panel = SettingsPanel},
 }
 
 for i, btnData in sidebarButtons do
@@ -151,7 +151,7 @@ UIComponents.applyCorner(questBtn, 10)
 questBtn.Parent = sidebar
 
 UIComponents.createIcon({
-	text = "📜",
+	text = "?!",
 	size = UDim2.new(1, 0, 1, 0),
 	parent = questBtn,
 	textSize = 18,

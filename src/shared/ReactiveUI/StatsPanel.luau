@@ -27,7 +27,7 @@ function StatsPanel.create(screenGui: ScreenGui): Frame
 	headerBar.Parent = panel
 
 	UIComponents.createIcon({
-		text = "📊",
+		text = "|||",
 		size = UDim2.new(0, 24, 0, 50),
 		position = UDim2.new(0, 16, 0, 0),
 		parent = panel,
@@ -48,12 +48,12 @@ function StatsPanel.create(screenGui: ScreenGui): Frame
 	})
 
 	local statsData = {
-		{label = "Strength", value = 245, max = 500, color = UIComponents.Colors.AccentRed, icon = "💪"},
-		{label = "Agility", value = 180, max = 500, color = UIComponents.Colors.AccentGreen, icon = "🏃"},
-		{label = "Intelligence", value = 320, max = 500, color = UIComponents.Colors.AccentSecondary, icon = "🧠"},
-		{label = "Vitality", value = 200, max = 500, color = UIComponents.Colors.HealthBar, icon = "❤"},
-		{label = "Wisdom", value = 275, max = 500, color = UIComponents.Colors.AccentPrimary, icon = "📖"},
-		{label = "Luck", value = 150, max = 500, color = UIComponents.Colors.AccentGold, icon = "🍀"},
+		{label = "Strength", value = 245, max = 500, color = UIComponents.Colors.AccentRed, icon = ">>"},
+		{label = "Agility", value = 180, max = 500, color = UIComponents.Colors.AccentGreen, icon = "~>"},
+		{label = "Intelligence", value = 320, max = 500, color = UIComponents.Colors.AccentSecondary, icon = "::"},
+		{label = "Vitality", value = 200, max = 500, color = UIComponents.Colors.HealthBar, icon = "+"},
+		{label = "Wisdom", value = 275, max = 500, color = UIComponents.Colors.AccentPrimary, icon = "**"},
+		{label = "Luck", value = 150, max = 500, color = UIComponents.Colors.AccentGold, icon = "%%"},
 	}
 
 	for i, stat in statsData do

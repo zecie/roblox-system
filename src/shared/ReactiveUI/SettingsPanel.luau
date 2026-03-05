@@ -27,7 +27,7 @@ function SettingsPanel.create(screenGui: ScreenGui): Frame
 	headerBar.Parent = panel
 
 	UIComponents.createIcon({
-		text = "⚙",
+		text = ":::",
 		size = UDim2.new(0, 24, 0, 50),
 		position = UDim2.new(0, 16, 0, 0),
 		parent = panel,
